@@ -102,7 +102,7 @@ def ej3():
     apellido = str(input())
 
     # Imprima su nombre completo
-    print ("\nSu Nombre Completo es: ", nombre, apellido)
+    print ("\nSu Nombre Completo es:", nombre, apellido)
 
     # Almacenar su nombre completo en una variable
     # nombre_completo = .....
@@ -115,7 +115,7 @@ def ej3():
         if nombre_completo[k] == ' ' :
             aux  = aux + 1
         
-    print('\nLa Cantidad de letras que tiene su nombre completo es: ', len(nombre_completo) - aux)
+    print('\nLa Cantidad de letras que tiene su nombre completo es:', len(nombre_completo) - aux)
 
 
 def ej4():
@@ -123,7 +123,7 @@ def ej4():
 
     # Ingrese tres palabras y arme un acrónimo con ellas
     # Si desea puede modificar el código para ingresar más palabras
-    print('Ingrese palabra 1:')
+    print('\n\nIngrese palabra 1:')
     palabra_1 = str(input())
 
     print('Ingrese palabra 2:')
@@ -132,30 +132,47 @@ def ej4():
     print('Ingrese palabra 3:')
     palabra_3 = str(input())
 
+    print ('Ingrese palabra 4:')
+    palabra_4 = str ( input ( ) )
+
+    print ('Ingrese palabra 5:')
+    palabra_5 = str ( input ( ) )
+
     # De cada palabra debe tomar la primera letra y armar el acrónimo
     # Ejemplo: Alumbrado, barrido y limpieza --> ABL
+    acronimo = palabra_1[0] + palabra_2[0] + palabra_3[0] + palabra_4[0] + palabra_5[0]
+
     # Imprimir el resultado en pantalla
+    print('\nEl acrónimo obtenido de la combinación de la 1er letra de las palabras ingresadas es:', acronimo)
 
 
 def ej5():
     # Ejemplos variables de texto
 
     # Ingrese dos palabras y arme combinaciones con ella
-    print('Ingrese palabra 1:')
+    print('\n\nIngrese palabra 1:')
     palabra_1 = str(input())
 
     print('Ingrese palabra 2:')
     palabra_2 = str(input())
 
     # De la primera palabra tome las primeras tres letras, utilice el operador :
+    prim_3_letras = palabra_1[0:3]
+
     # De la segunda palabra tome las últimas tres letras, utilice el operador :
+    ult_3_letras = palabra_2[-3:-1] + palabra_2[-1]
+
     # Formar una nueva palabra con los recortes solicitados
+    palabra_nueva = prim_3_letras + ult_3_letras
+
     # Imprima en pantalla los resultados
+    print ('\nLa Nueva Palabra formada con los Recortes Solicitados es:', palabra_nueva)
+    print("\n\n\n")
 
 if __name__ == '__main__':
     print("Bienvenidos a otra clase de Inove con Python")
-    #ej1()
-    #ej2()
+    ej1()
+    ej2()
     ej3()
-    # ej4()
-    # ej5()
+    ej4()
+    ej5()
