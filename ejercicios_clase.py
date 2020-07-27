@@ -20,7 +20,7 @@ def ej1():
     # Ejercicios de práctica numérica
 
     # Operadores con números decimales
-    print('Ingrese el primer número decimal a operar:')
+    print('\nIngrese el primer número decimal a operar:')
     numero_1 = int(input())
 
     print('Ingrese el segundo número decimal a operar:')
@@ -28,7 +28,7 @@ def ej1():
 
     # Alumno: Imprima en pantalla los dos números decimales solicitados
     # print(....)
-    print ("Los Números Ingresados son:\nNúmero 1:", numero_1, "\nNúmero 2: ", numero_2)
+    print ("\nLos Números Enteros Ingresados son:\nNúmero 1:", numero_1, "\nNúmero 2: ", numero_2)
 
     # Alumno: Calcule la suma, resta, división y multiplicación de los números ingresados
     # numero_1, numero_2
@@ -56,7 +56,7 @@ def ej2():
     # Ejercicios de práctica numérica
 
     # Operadores con números reales
-    print('Ingrese el primer número real a operar:')
+    print('\n\nIngrese el primer número real a operar:')
     numero_3 = float(input())
 
     print('Ingrese el segundo número real a operar:')
@@ -64,6 +64,9 @@ def ej2():
 
     # Alumno: Imprima en pantalla los dos números reales solicitados
     # print(....)
+    print ('\n\nLos Números Reales Ingresados son:')
+    print ('Número 1: ', numero_3)
+    print ('Número 2: ', numero_4)
 
     # Alumno: Calcule la suma, resta, división y multiplicación de los números ingresados
     # numero_3, numero_4
@@ -71,12 +74,20 @@ def ej2():
     # El resultado de sumar 4 y 2 es 6
 
     # Suma
+    result = numero_3 + numero_4
+    print ('\nEl resultado de Sumar', numero_3, 'y', numero_4, 'es:', result)
 
     # Resta
+    result = numero_3 - numero_4
+    print ('\nEl resultado de Restar', numero_3, 'y', numero_4, 'es:', result)
 
     # División
+    result = numero_3 / numero_4
+    print ('\nEl resultado de Dividir', numero_3, 'y', numero_4, 'es:', result)
 
     # Multiplicación
+    result = numero_3 * numero_4
+    print ('\nEl resultado de Multiplicar', numero_3, 'y', numero_4, 'es:', result)
 
 
 def ej3():
@@ -135,6 +146,6 @@ def ej4():
 if __name__ == '__main__':
     print("Bienvenidos a otra clase de Inove con Python")
     ej1()
-    # ej2()
+    ej2()
     # ej3()
     # ej4()
