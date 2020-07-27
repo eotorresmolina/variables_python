@@ -95,21 +95,30 @@ def ej3():
 
     # Ingrese primero su nombre y luego su apellido
     # Capture ambos datos e imprima su nombre completo
-    print('Ingrese su nombre/s:')
+    print('\n\nIngrese su nombre/s:')
     nombre = str(input())
 
     print('Ingrese su apellido/s:')
     apellido = str(input())
 
     # Imprima su nombre completo
+    print ("\nSu Nombre Completo es: ", nombre, apellido)
 
     # Almacenar su nombre completo en una variable
     # nombre_completo = .....
+    nombre_completo = nombre + ' ' + apellido
 
     # Imprimir la cantidad de letras que posee su nombre completo
+    aux = 0 # Inicializo la Variable
+
+    for k in range (0, len(nombre_completo)):       # Cuento la cant. de espacios que tiene mi nombre completo
+        if nombre_completo[k] == ' ' :
+            aux  = aux + 1
+        
+    print('\nLa Cantidad de letras que tiene su nombre completo es: ', len(nombre_completo) - aux)
 
 
-def ej3():
+def ej4():
     # Ejemplos variables de texto
 
     # Ingrese tres palabras y arme un acrónimo con ellas
@@ -128,7 +137,7 @@ def ej3():
     # Imprimir el resultado en pantalla
 
 
-def ej4():
+def ej5():
     # Ejemplos variables de texto
 
     # Ingrese dos palabras y arme combinaciones con ella
@@ -145,7 +154,8 @@ def ej4():
 
 if __name__ == '__main__':
     print("Bienvenidos a otra clase de Inove con Python")
-    ej1()
-    ej2()
-    # ej3()
+    #ej1()
+    #ej2()
+    ej3()
     # ej4()
+    # ej5()
