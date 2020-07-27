@@ -11,8 +11,8 @@ Programa creado para poner a prueba los conocimientos
 adquiridos durante la clase
 '''
 
-__author__ = "Inove Coding School"
-__email__ = "alumnos@inove.com.ar"
+__author__ = "Emmanuel O. Torres Molina"
+__email__ = "emmaotm@gmail.com"
 __version__ = "1.1"
 
 
@@ -28,6 +28,7 @@ def ej1():
 
     # Alumno: Imprima en pantalla los dos números decimales solicitados
     # print(....)
+    print ("Los Números Ingresados son:\nNúmero 1:", numero_1, "\nNúmero 2: ", numero_2)
 
     # Alumno: Calcule la suma, resta, división y multiplicación de los números ingresados
     # numero_1, numero_2
@@ -35,12 +36,20 @@ def ej1():
     # El resultado de sumar 4 y 2 es 6
 
     # Suma
-
+    result = numero_1 + numero_2
+    print ('\nEl resultado de Sumar', numero_1, 'y', numero_2, 'es:', result)
+   
     # Resta
+    result = numero_1 - numero_2
+    print ('\nEl resultado de Restar', numero_1, 'y', numero_2, 'es:', result)
 
     # División
+    result = numero_1 / numero_2
+    print ('\nEl resultado de Dividir', numero_1, 'y', numero_2, 'es:', result)
 
     # Multiplicación
+    result = numero_1 * numero_2
+    print ('\nEl resultado de Multiplicar', numero_1, 'y', numero_2, 'es:', result)
 
 
 def ej2():
