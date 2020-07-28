@@ -36,6 +36,8 @@ def ej1():
     '''
 
     # Desarrollo de la Función:
+
+    # Ingreso de Datos:
     print ('Ingrese el 1er Número Real: ')
     nro_1 = float (input ( ))
 
@@ -101,14 +103,13 @@ def ej2():
 
 
     # Impresión de Datos por Consola:
-
     print ('\n\nNombre Completo:', nombre_apellido, '  DNI:', dni)
     print('\nNombre Completo:', nombre_apellido, '  Edad:', edad, '  Altura:', altura)
 
 
 
 def ej3():
-    print('Ejercicios de práctica con cadenas')
+    print('\n\nEjercicios de práctica con cadenas')
 
     '''
     Realice un programa que determine cual sería el apellido de una persona
@@ -140,10 +141,28 @@ def ej3():
 
     '''
 
+    # Desarrollo de la Función:
+
+    # Ingreso de Datos:
+    print ('\nIngrese el Nombre Completo del Padre/Madre:')
+    padre_1 = str ( input ( ) )
+
+    print ('\nIngrese el Nombre Completo del Padre/Madre:')
+    padre_2 = str ( input ( ) )
+
+    print('\nAhora Ingrese sólo el/los Nombres del Hijo/a:')
+    nombre_hijo = str ( input ( ) )
+
+    apellido_hijo = str( padre_1.split (sep = ' ')[1] ) + ' ' + str( padre_2.split(sep = ' ')[1] )
+
+    nombre_completo_hijo = nombre_hijo + ' ' + apellido_hijo
+
+    print ('\nEl Nombre Completo del Hijo/a es:', nombre_completo_hijo)
+
 
 def ej4():
     # Ejercicios de práctica con cadenas
-    print('Comencemos a ponernos serios')
+    print('\nComencemos a ponernos serios')
     '''
     Realice un programa que determine si una persona_2
     es pariente de la persona_1
@@ -204,7 +223,7 @@ def ej5():
 if __name__ == '__main__':
     print("Ejercicios de práctica")
     #ej1()
-    ej2()
-    # ej3()
+    #ej2()
+    ej3()
     # ej4()
     # ej5()
