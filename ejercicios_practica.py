@@ -65,7 +65,7 @@ def ej1():
 
 
 def ej2():
-    print('Ejercicios de práctica numérica y cadenas')
+    print('\n\nEjercicios de práctica numérica y cadenas')
     '''
     Realice un programa que consulte por consola:
     - El nombre completo de la persona
@@ -83,6 +83,28 @@ def ej2():
       entienda de que se está hablando.
 
     '''
+
+    # Desarrollo de la función:
+    
+    # Ingreso de Datos:
+    print ('\nIngrese Su Nombre Completo (Nombre y Apellido):')
+    nombre_apellido = str ( input ( ) )
+
+    print ('\nIngrese su DNI:')
+    dni = int ( input ( ) )
+
+    print ('\nIngrese su Edad:')
+    edad = int ( input ( ) )
+
+    print ("\nIngrese su Altura:")
+    altura = float ( input ( ) )
+
+
+    # Impresión de Datos por Consola:
+
+    print ('\n\nNombre Completo:', nombre_apellido, '  DNI:', dni)
+    print('\nNombre Completo:', nombre_apellido, '  Edad:', edad, '  Altura:', altura)
+
 
 
 def ej3():
@@ -181,8 +203,8 @@ def ej5():
 
 if __name__ == '__main__':
     print("Ejercicios de práctica")
-    ej1()
-    # ej2()
+    #ej1()
+    ej2()
     # ej3()
     # ej4()
     # ej5()
