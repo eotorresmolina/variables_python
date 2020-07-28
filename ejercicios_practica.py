@@ -193,6 +193,23 @@ def ej4():
     Cualquier duda con el método split pueden consultarla por el campus
     '''
 
+    # Desarrollo de la Función:
+
+    #Ingreso de los Datos:
+    print('\n\nIngrese Nombre y Apellido de la 1er Persona: Formato: [Nombre Apellido]:')
+    persona_1 = str ( input ( ) )
+
+    print("\nIngrese Nombre y Apellido de la 2da Persona: Formato: [Nombre Apellido]:")
+    persona_2 = str (input ())
+
+    apellido_persona_2 = str ( persona_2.split (sep = ' ')[1] )
+
+    if ( apellido_persona_2 in persona_1 ):
+      print ('\n\n', persona_2, 'SI es pariente de', persona_1)
+
+    else:
+      print ('\n\n', persona_2, 'NO es pariente de', persona_1)
+
 
 def ej5():
     # Ejercicios de práctica con cadenas
@@ -224,6 +241,6 @@ if __name__ == '__main__':
     print("Ejercicios de práctica")
     #ej1()
     #ej2()
-    ej3()
-    # ej4()
+    #ej3()
+    ej4()
     # ej5()
