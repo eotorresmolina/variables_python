@@ -213,7 +213,7 @@ def ej4():
 
 def ej5():
     # Ejercicios de práctica con cadenas
-    print('Ahora si! buena suerte!')
+    print('\n\nAhora si! buena suerte!')
     '''
     Realice un programa que reciba por consola su nombre completo
     e imprima en pantalla su nombre en los siguientes formatos:
@@ -236,11 +236,25 @@ def ej5():
     Cualquier duda con estos métodos pueden consultarla por el campus
     '''
 
+    # Desarrollo de la Función:
+
+    # Ingreso de Datos:
+    print('\nIngrese su Nombre Completo. (Nombre y Apellido):')
+    nombre_completo = str ( input ( ) )
+
+    print ('\nSu Nombre Completo es:', nombre_completo) 
+
+    print('\n\nSu Nombre Completo con Todas las Letras en Minúscula es:', nombre_completo.lower( ) )
+    print('\nSu Nombre Completo con Todas las Letras en Mayúscula es:', nombre_completo.upper( ) )
+    print('\nSu Nombre Completo con la 1er Letra en Mayúscula es:', nombre_completo.capitalize( ) )
+    print('\n\n')
+
+
 
 if __name__ == '__main__':
     print("Ejercicios de práctica")
-    #ej1()
-    #ej2()
-    #ej3()
+    ej1()
+    ej2()
+    ej3()
     ej4()
-    # ej5()
+    ej5()
