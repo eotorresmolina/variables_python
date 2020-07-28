@@ -11,14 +11,14 @@ Programa creado para que practiquen los conocimietos
 adquiridos durante la semana
 '''
 
-__author__ = "Inove Coding School"
+__author__ = "Emmanuel Torres Molina"
 __email__ = "alumnos@inove.com.ar"
 __version__ = "1.3"
 
 
 def ej1():
     # Ejercicios de práctica con números
-    print('Nuestra primera calculadora')
+    print('\n\nNuestra primera calculadora:\n\n')
     '''
     Realice un calculadora, se ingresará por línea de comando dos
     números reales y se deberá calcular todas las operaciones entre ellos:
@@ -34,6 +34,34 @@ def ej1():
       ej: La suma entre 4.2 y 6.5 es 10.7
 
     '''
+
+    # Desarrollo de la Función:
+    print ('Ingrese el 1er Número Real: ')
+    nro_1 = float (input ( ))
+
+    print ('\nIngrese el 2do Número Real: ')
+    nro_2 = float ( input ( ))
+
+    # Suma:
+    suma = nro_1 + nro_2
+
+    # Resta:
+    resta = nro_1 - nro_2
+
+    # Multiplicación:
+    producto = nro_1 * nro_2
+
+    # División:
+    division = nro_1 / nro_2
+
+    # Exponente / Potencia:
+    potencia = nro_1 ** nro_2
+
+    print ('\nLa Suma entre', nro_1, 'y', nro_2, 'es:', suma)
+    print ('\nLa Resta entre', nro_1, 'y', nro_2, 'es:', resta)
+    print ('\nEl Producto entre', nro_1, 'y', nro_2, 'es:', producto)
+    print ('\nLa División entre', nro_1, 'y', nro_2, 'es:', division)
+    print ('\nLa Potencia entre', nro_1, '(base) y', nro_2, '(exponente) es:', potencia)
 
 
 def ej2():
